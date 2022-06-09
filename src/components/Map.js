@@ -15,8 +15,24 @@ const Map = () => {
                 longitudeDelta: 0.5
             }}
         >
+            <MapView.Marker 
+                coordinate={{ 
+                    latitude: 51.9172,
+                    longitude: 4.4840,
+                }}
+                title={"Hogeschool Rotterdam Wijnhaven"}
+                description={"Dit is de HR locatie op wijnhaven, hier zitten onder andere Informatice, CMGT en technische informatica"}
+            />
 
-        </MapView>
+            <MapView.Marker 
+                coordinate={{ 
+                    latitude: 51.9153,
+                    longitude: 4.5276,
+                }}
+                title={"Hogeschool Rotterdam Kralingse Zoom"}
+                description={"Dit is de HR locatie op wijnhaven, hier zit de business school"}
+            />
+            </MapView>
     )
 }
 
