@@ -36,7 +36,10 @@ const MapListScreen = ({ navigation }) => {
                 keyExtractor={ item => item.id }
                 renderItem={({ item }) => {
                     return(
-                        <TouchableOpacity>
+                        <TouchableOpacity 
+                        onPress={() => 
+                            navigation.navigate('MapDetail', {_id: item.id})
+                        }>
                             <ListItem chevron title={ item.title } />
                         </TouchableOpacity>
                     )
