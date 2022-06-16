@@ -10,6 +10,11 @@ const switchNavigator = createSwitchNavigator({
   mainFlow: createMaterialBottomTabNavigator({
     MapView: MapScreen,
     MapList: MapListScreen
+  }, {
+    tabBarOptions: {
+      showLabel: false,
+      activeTintColor: '#3D8839'
+    }
   })
 })
 
