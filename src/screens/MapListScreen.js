@@ -40,7 +40,7 @@ const MapListScreen = ({ navigation }) => {
                         onPress={() => 
                             navigation.navigate('MapDetail', {_id: item.id})
                         }>
-                            <ListItem chevron title={ item.title } />
+                            <ListItem chevron title={ item.title } style={ styles.item } />
                         </TouchableOpacity>
                     )
                 }}
@@ -58,9 +58,15 @@ MapListScreen.navigationOptions = {
 
 const styles = StyleSheet.create({
     container: {
+        flex: 1,
         margin: 4,
         padding: 30,
-    }
+    },
+    item: {
+        padding: 10,
+        fontSize: 18,
+        height: 44,
+    },
 })
 
 export default MapListScreen

@@ -12,7 +12,7 @@ const response =[
             longitude: 4.4840,
         },
         title: 'title 1',
-        desciption: 'description 1',
+        description: 'description 1',
         icon: require('../../assets/marker.jpeg')
     },
     {
